@@ -110,7 +110,7 @@ impl<'render, 'template> RenderContext<'render, 'template> {
 /// Structure representing a parsed template. It holds the bytecode program for rendering the
 /// template as well as the length of the original template string, which is used as a guess to
 /// pre-size the output string buffer.
-pub(crate) struct Template<'template> {
+pub struct Template<'template> {
     original_text: &'template str,
     instructions: Vec<Instruction<'template>>,
     template_len: usize,
