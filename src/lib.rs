@@ -73,7 +73,7 @@ mod compiler;
 pub mod error;
 mod instruction;
 pub mod syntax;
-mod template;
+pub mod template;
 
 use error::*;
 use serde::Serialize;
